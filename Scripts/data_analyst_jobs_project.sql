@@ -73,9 +73,10 @@ ORDER BY new_avg_rating DESC;
 --ANSWER=American Express(4.20 rating)
 
 --Q11.Find all the job titles that contain the word ‘Analyst’. How many different job titles are there?
-SELECT title
+SELECT DISTINCT(title)
 FROM data_analyst_jobs
-WHERE title LIKE '%Analyst%';
+WHERE title ILIKE '%Analyst%';
+--ANS 774
 
 SELECT COUNT (title) AS total_title
 FROM data_analyst_jobs
