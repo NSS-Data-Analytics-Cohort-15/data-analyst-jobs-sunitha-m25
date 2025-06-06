@@ -6,7 +6,7 @@ from data_analyst_jobs;
 --Q2.Write a query to look at just the first 10 rows. What company is associated with the job posting on the 10th row?
 select * from data_analyst_jobs
 limit 10; 
---Answer = XTO Land Data Analyst
+--Answer = ExxonMobil
 
 --Q3.How many postings are in Tennessee? How many are there in either Tennessee or Kentucky?
 select count(location)  as count_loc
